@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 
-class BcryptService {
+export class BcryptService {
     constructor() {}
 
     async generateHash(password : string) : Promise<string> {

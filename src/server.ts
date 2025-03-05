@@ -65,25 +65,25 @@ app.use(compression());
 // routes
 
 // 1. user auth router
-app.use(AuthRouter);
+app.use("/api/v1/auth", AuthRouter);
 
 // 2. projects
-app.use(ProjectsRouter);
+app.use("/api/v1/projects", ProjectsRouter);
 
 // 3. tasks
-app.use(TasksRouter);
+app.use("/api/v1/tasks", TasksRouter);
 
 // 4. teams
-app.use(TeamsRouter);
+app.use("/api/v1/teams", TeamsRouter);
 
 // 5. timer 
-app.use(TimerRouter);
+app.use("/api/v1/timer", TimerRouter);
 
 // 6. blogs
-app.use(BlogsRouter);
+app.use("/api/v1/blogs", BlogsRouter);
 
 // 7. Overview
-app.use(OverviewRouter);
+app.use("/api/v1/overview", OverviewRouter);
 
 // middlewares
 app.use(GlobalErr);

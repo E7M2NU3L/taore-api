@@ -34,6 +34,10 @@ const UserSchema = new mongoose.Schema({
     address : {
         type : String,
         default : ""
+    },
+    mfa : {
+        type : Boolean,
+        default : false
     }
 }, {
     timestamps : true,
